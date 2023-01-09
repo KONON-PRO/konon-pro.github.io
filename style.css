@@ -1,26 +1,31 @@
-html, body {
- width: 100%;
- height: 100%;
- overflow: hidden;
+.leftside, .rightside {
+    height: 50vh;
+    width: 100%;
 }
 
-#parent {
-  display: flex;
-  width: 100%;
-  height: 100%;
+
+@media screen and (min-width: 768px){
+    .leftside, .rightside {
+    height: 100vh;
+    }
 }
 
-#parent #left {
-  background-color: green;
-  flex-grow: 1;
-
+.leftside{
+    background: white;
 }
 
-#parent #right {
-  background-color: navy;
-  flex-grow: 1;
+.rightside{
+    background: white;
 }
 
+
+.leftside:hover{
+  filter: brightness(50%);
+}
+
+.rightside:hover{
+  filter: brightness(50%);
+}
 /*
 body {
 	margin: 0;
